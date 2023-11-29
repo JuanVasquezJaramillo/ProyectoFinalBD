@@ -185,7 +185,6 @@ namespace Proyecto_Final_Lab_BDI
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
-            //FIXED
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label5
