@@ -19,6 +19,7 @@ namespace Proyecto_Final_Lab_BDI
             InitializeComponent();
         }
         Cliente cliente = new Cliente();
+        Reportes reporte = new Reportes();
         //------------BTNGuardar DE LA PESTAÑA REGISTRO----------------
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -159,6 +160,60 @@ namespace Proyecto_Final_Lab_BDI
             else
             {
                 MessageBox.Show("No se pudo encontrar el cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnVerReporte_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            ds = reporte.segundoReporte();
+            Console.WriteLine("DS DS DS " + ds.Tables[0]);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+
+                dgvReporte1.DataSource = ds;
+                dgvReporte1.DataMember = "ResultadoDatos";
+                MessageBox.Show("Reporte realizado con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo realizar el reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnVerReporte2_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            ds = reporte.tercerReporte();
+            Console.WriteLine("DS DS DS " + ds.Tables[0]);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+
+                dgvReporte2.DataSource = ds;
+                dgvReporte2.DataMember = "ResultadoDatos";
+                MessageBox.Show("Reporte realizado con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo realizar el reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnVerReporte3_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            ds = reporte.primerReporte();
+            Console.WriteLine("DS DS DS " + ds.Tables[0]);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+
+                dgvReporte3.DataSource = ds;
+                dgvReporte3.DataMember = "ResultadoDatos";
+                MessageBox.Show("Reporte realizado con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo realizar el reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         //------------BTNBuscar DE LA PESTAÑA ELIMINAR----------------
