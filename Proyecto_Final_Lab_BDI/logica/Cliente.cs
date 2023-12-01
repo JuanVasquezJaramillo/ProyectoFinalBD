@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Final_Lab_BDI.logica
 {
-    class Empleado
+    class Cliente
     {
         //COMENTANDO ANDO
     }

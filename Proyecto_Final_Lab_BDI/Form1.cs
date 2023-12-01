@@ -28,17 +28,8 @@ namespace Proyecto_Final_Lab_BDI
             return rx.IsMatch(correo); //rx.IsMatch compara la regex del constructor con la que pasamos por este parametro
         }
 
-        private void lblCedula_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnDatosCliente_Paint(object sender, PaintEventArgs e)
+        private void btnBuscarPorCedula_Click(object sender, EventArgs e)
         {
 
         }

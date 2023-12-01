@@ -29,54 +29,72 @@ namespace Proyecto_Final_Lab_BDI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tbcCRUD = new System.Windows.Forms.TabControl();
             this.tpCrear = new System.Windows.Forms.TabPage();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.tpActualizar = new System.Windows.Forms.TabPage();
-            this.tpEliminar = new System.Windows.Forms.TabPage();
-            this.tpConsultar = new System.Windows.Forms.TabPage();
+            this.pnDatosCliente = new System.Windows.Forms.Panel();
+            this.lblSubTituloDatos = new System.Windows.Forms.Label();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblSubTituloContacto = new System.Windows.Forms.Label();
-            this.txtCelular = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.txtCorreo = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtCedulaCliente = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.btnBuscarPorCedula = new System.Windows.Forms.Button();
-            this.lblTituloActualizar = new System.Windows.Forms.Label();
-            this.lblApellido = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblCedula = new System.Windows.Forms.Label();
-            this.lblSubTituloDatos = new System.Windows.Forms.Label();
-            this.txtCedula = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.txtNombre = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.txtApellido = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.pnDatosCliente = new System.Windows.Forms.Panel();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.tpActualizar = new System.Windows.Forms.TabPage();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblSubTituloActualizarInfo = new System.Windows.Forms.Label();
+            this.lblCelularAct = new System.Windows.Forms.Label();
+            this.lblCorreoAct = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtApellidoAct = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.txtNombreAct = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.txtCedulaAct = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.lblSubTituloActualizar = new System.Windows.Forms.Label();
             this.lblCedulaAct = new System.Windows.Forms.Label();
             this.lblNombreAct = new System.Windows.Forms.Label();
             this.lblApellidoAct = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTituloActualizar = new System.Windows.Forms.Label();
+            this.btnBuscarPorCedula = new System.Windows.Forms.Button();
+            this.tpEliminar = new System.Windows.Forms.TabPage();
+            this.tpConsultar = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblTituloEliminarCliente = new System.Windows.Forms.Label();
+            this.btnBuscarDel = new System.Windows.Forms.Button();
+            this.dgvClienteDel = new System.Windows.Forms.DataGridView();
+            this.btnEliminarClienteDel = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblTituloConsultarClientes = new System.Windows.Forms.Label();
+            this.btnBuscarClientesCon = new System.Windows.Forms.Button();
+            this.dgvClientesConsulta = new System.Windows.Forms.DataGridView();
+            this.txtApellido = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtNombre = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtCedula = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtCorreo = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtCelular = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.txtCorreoAct = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.txtCelularAct = new Proyecto_Final_Lab_BDI.TxtHolder();
-            this.lblSubTituloActualizarInfo = new System.Windows.Forms.Label();
-            this.lblCelularAct = new System.Windows.Forms.Label();
-            this.lblCorreoAct = new System.Windows.Forms.Label();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.txtApellidoAct = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtNombreAct = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtCedulaAct = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtCedulaCliente = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtClienteDel = new Proyecto_Final_Lab_BDI.TxtHolder();
+            this.txtBuscarClientesCon = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.tbcCRUD.SuspendLayout();
             this.tpCrear.SuspendLayout();
-            this.tpActualizar.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.pnDatosCliente.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.tpActualizar.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tpEliminar.SuspendLayout();
+            this.tpConsultar.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClienteDel)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientesConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // tbcCRUD
@@ -105,80 +123,61 @@ namespace Proyecto_Final_Lab_BDI
             this.tpCrear.TabIndex = 0;
             this.tpCrear.Text = "Registro";
             // 
-            // lblTitulo
+            // pnDatosCliente
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblTitulo.Location = new System.Drawing.Point(287, 26);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(203, 20);
-            this.lblTitulo.TabIndex = 11;
-            this.lblTitulo.Text = "REGISTRAR UN CLIENTE";
+            this.pnDatosCliente.BackColor = System.Drawing.Color.Transparent;
+            this.pnDatosCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnDatosCliente.Controls.Add(this.txtApellido);
+            this.pnDatosCliente.Controls.Add(this.txtNombre);
+            this.pnDatosCliente.Controls.Add(this.txtCedula);
+            this.pnDatosCliente.Controls.Add(this.lblSubTituloDatos);
+            this.pnDatosCliente.Controls.Add(this.lblCedula);
+            this.pnDatosCliente.Controls.Add(this.lblNombre);
+            this.pnDatosCliente.Controls.Add(this.lblApellido);
+            this.pnDatosCliente.Location = new System.Drawing.Point(72, 63);
+            this.pnDatosCliente.Name = "pnDatosCliente";
+            this.pnDatosCliente.Size = new System.Drawing.Size(235, 195);
+            this.pnDatosCliente.TabIndex = 12;
             // 
-            // lblCorreo
+            // lblSubTituloDatos
             // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblCorreo.Location = new System.Drawing.Point(13, 91);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(100, 13);
-            this.lblCorreo.TabIndex = 9;
-            this.lblCorreo.Text = "Correo Electrónico: ";
+            this.lblSubTituloDatos.AutoSize = true;
+            this.lblSubTituloDatos.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblSubTituloDatos.Location = new System.Drawing.Point(55, 17);
+            this.lblSubTituloDatos.Name = "lblSubTituloDatos";
+            this.lblSubTituloDatos.Size = new System.Drawing.Size(119, 13);
+            this.lblSubTituloDatos.TabIndex = 14;
+            this.lblSubTituloDatos.Text = "DATOS PERSONALES";
             // 
-            // btnGuardar
+            // lblCedula
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.Honeydew;
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.Location = new System.Drawing.Point(317, 267);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(121, 51);
-            this.btnGuardar.TabIndex = 8;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblCedula.Location = new System.Drawing.Point(12, 53);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(46, 13);
+            this.lblCedula.TabIndex = 1;
+            this.lblCedula.Text = "Cedula: ";
             // 
-            // lblTelefono
+            // lblNombre
             // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblTelefono.Location = new System.Drawing.Point(13, 53);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(45, 13);
-            this.lblTelefono.TabIndex = 3;
-            this.lblTelefono.Text = "Celular: ";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblNombre.Location = new System.Drawing.Point(12, 91);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(50, 13);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre: ";
             // 
-            // tpActualizar
+            // lblApellido
             // 
-            this.tpActualizar.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.tpActualizar.Controls.Add(this.btnActualizar);
-            this.tpActualizar.Controls.Add(this.panel4);
-            this.tpActualizar.Controls.Add(this.panel3);
-            this.tpActualizar.Controls.Add(this.panel1);
-            this.tpActualizar.Location = new System.Drawing.Point(4, 22);
-            this.tpActualizar.Name = "tpActualizar";
-            this.tpActualizar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpActualizar.Size = new System.Drawing.Size(768, 400);
-            this.tpActualizar.TabIndex = 1;
-            this.tpActualizar.Text = "Actualizar Datos";
-            // 
-            // tpEliminar
-            // 
-            this.tpEliminar.Location = new System.Drawing.Point(4, 22);
-            this.tpEliminar.Name = "tpEliminar";
-            this.tpEliminar.Size = new System.Drawing.Size(768, 400);
-            this.tpEliminar.TabIndex = 2;
-            this.tpEliminar.Text = "Eliminar Registros";
-            this.tpEliminar.UseVisualStyleBackColor = true;
-            // 
-            // tpConsultar
-            // 
-            this.tpConsultar.Location = new System.Drawing.Point(4, 22);
-            this.tpConsultar.Name = "tpConsultar";
-            this.tpConsultar.Size = new System.Drawing.Size(768, 400);
-            this.tpConsultar.TabIndex = 3;
-            this.tpConsultar.Text = "Consultar Datos";
-            this.tpConsultar.UseVisualStyleBackColor = true;
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblApellido.Location = new System.Drawing.Point(11, 136);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(47, 13);
+            this.lblApellido.TabIndex = 2;
+            this.lblApellido.Text = "Apellido:";
             // 
             // panel2
             // 
@@ -203,153 +202,117 @@ namespace Proyecto_Final_Lab_BDI
             this.lblSubTituloContacto.TabIndex = 15;
             this.lblSubTituloContacto.Text = "INFO DE CONTACTO";
             // 
-            // txtCelular
+            // lblTelefono
             // 
-            this.txtCelular.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCelular.Location = new System.Drawing.Point(119, 50);
-            this.txtCelular.Name = "txtCelular";
-            this.txtCelular.PlaceHolder = "Celular";
-            this.txtCelular.Size = new System.Drawing.Size(100, 20);
-            this.txtCelular.TabIndex = 15;
-            this.txtCelular.Text = "Celular";
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblTelefono.Location = new System.Drawing.Point(13, 53);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(45, 13);
+            this.lblTelefono.TabIndex = 3;
+            this.lblTelefono.Text = "Celular: ";
             // 
-            // txtCorreo
+            // lblCorreo
             // 
-            this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCorreo.Location = new System.Drawing.Point(119, 88);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.PlaceHolder = "correo@gmail.com";
-            this.txtCorreo.Size = new System.Drawing.Size(100, 20);
-            this.txtCorreo.TabIndex = 16;
-            this.txtCorreo.Text = "correo@gmail.com";
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblCorreo.Location = new System.Drawing.Point(13, 91);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(100, 13);
+            this.lblCorreo.TabIndex = 9;
+            this.lblCorreo.Text = "Correo Electrónico: ";
             // 
-            // panel1
+            // lblTitulo
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.lblTituloActualizar);
-            this.panel1.Controls.Add(this.btnBuscarPorCedula);
-            this.panel1.Controls.Add(this.txtCedulaCliente);
-            this.panel1.Location = new System.Drawing.Point(9, 8);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(758, 159);
-            this.panel1.TabIndex = 0;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblTitulo.Location = new System.Drawing.Point(287, 26);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(203, 20);
+            this.lblTitulo.TabIndex = 11;
+            this.lblTitulo.Text = "REGISTRAR UN CLIENTE";
             // 
-            // txtCedulaCliente
+            // btnGuardar
             // 
-            this.txtCedulaCliente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCedulaCliente.Location = new System.Drawing.Point(278, 67);
-            this.txtCedulaCliente.Name = "txtCedulaCliente";
-            this.txtCedulaCliente.PlaceHolder = "Buscar...";
-            this.txtCedulaCliente.Size = new System.Drawing.Size(187, 20);
-            this.txtCedulaCliente.TabIndex = 0;
-            this.txtCedulaCliente.Text = "Buscar...";
+            this.btnGuardar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.Location = new System.Drawing.Point(317, 267);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(121, 51);
+            this.btnGuardar.TabIndex = 8;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnBuscarPorCedula
+            // tpActualizar
             // 
-            this.btnBuscarPorCedula.Location = new System.Drawing.Point(336, 93);
-            this.btnBuscarPorCedula.Name = "btnBuscarPorCedula";
-            this.btnBuscarPorCedula.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarPorCedula.TabIndex = 1;
-            this.btnBuscarPorCedula.Text = "Buscar";
-            this.btnBuscarPorCedula.UseVisualStyleBackColor = true;
+            this.tpActualizar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.tpActualizar.Controls.Add(this.btnActualizar);
+            this.tpActualizar.Controls.Add(this.panel4);
+            this.tpActualizar.Controls.Add(this.panel3);
+            this.tpActualizar.Controls.Add(this.panel1);
+            this.tpActualizar.Location = new System.Drawing.Point(4, 22);
+            this.tpActualizar.Name = "tpActualizar";
+            this.tpActualizar.Padding = new System.Windows.Forms.Padding(3);
+            this.tpActualizar.Size = new System.Drawing.Size(768, 400);
+            this.tpActualizar.TabIndex = 1;
+            this.tpActualizar.Text = "Actualizar Datos";
             // 
-            // lblTituloActualizar
+            // btnActualizar
             // 
-            this.lblTituloActualizar.AutoSize = true;
-            this.lblTituloActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloActualizar.Location = new System.Drawing.Point(244, 34);
-            this.lblTituloActualizar.Name = "lblTituloActualizar";
-            this.lblTituloActualizar.Size = new System.Drawing.Size(267, 20);
-            this.lblTituloActualizar.TabIndex = 2;
-            this.lblTituloActualizar.Text = "ACTUALIZAR DATOS DE CLIENTE";
+            this.btnActualizar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnActualizar.Enabled = false;
+            this.btnActualizar.Location = new System.Drawing.Point(347, 371);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 16;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
             // 
-            // lblApellido
+            // panel4
             // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblApellido.Location = new System.Drawing.Point(11, 136);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(47, 13);
-            this.lblApellido.TabIndex = 2;
-            this.lblApellido.Text = "Apellido:";
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.txtCorreoAct);
+            this.panel4.Controls.Add(this.txtCelularAct);
+            this.panel4.Controls.Add(this.lblSubTituloActualizarInfo);
+            this.panel4.Controls.Add(this.lblCelularAct);
+            this.panel4.Controls.Add(this.lblCorreoAct);
+            this.panel4.Location = new System.Drawing.Point(469, 173);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(235, 195);
+            this.panel4.TabIndex = 15;
             // 
-            // lblNombre
+            // lblSubTituloActualizarInfo
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblNombre.Location = new System.Drawing.Point(12, 91);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(50, 13);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre: ";
+            this.lblSubTituloActualizarInfo.AutoSize = true;
+            this.lblSubTituloActualizarInfo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblSubTituloActualizarInfo.Location = new System.Drawing.Point(59, 17);
+            this.lblSubTituloActualizarInfo.Name = "lblSubTituloActualizarInfo";
+            this.lblSubTituloActualizarInfo.Size = new System.Drawing.Size(112, 13);
+            this.lblSubTituloActualizarInfo.TabIndex = 15;
+            this.lblSubTituloActualizarInfo.Text = "INFO DE CONTACTO";
             // 
-            // lblCedula
+            // lblCelularAct
             // 
-            this.lblCedula.AutoSize = true;
-            this.lblCedula.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblCedula.Location = new System.Drawing.Point(12, 53);
-            this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(46, 13);
-            this.lblCedula.TabIndex = 1;
-            this.lblCedula.Text = "Cedula: ";
-            this.lblCedula.Click += new System.EventHandler(this.lblCedula_Click);
+            this.lblCelularAct.AutoSize = true;
+            this.lblCelularAct.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblCelularAct.Location = new System.Drawing.Point(13, 53);
+            this.lblCelularAct.Name = "lblCelularAct";
+            this.lblCelularAct.Size = new System.Drawing.Size(45, 13);
+            this.lblCelularAct.TabIndex = 3;
+            this.lblCelularAct.Text = "Celular: ";
             // 
-            // lblSubTituloDatos
+            // lblCorreoAct
             // 
-            this.lblSubTituloDatos.AutoSize = true;
-            this.lblSubTituloDatos.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblSubTituloDatos.Location = new System.Drawing.Point(55, 17);
-            this.lblSubTituloDatos.Name = "lblSubTituloDatos";
-            this.lblSubTituloDatos.Size = new System.Drawing.Size(119, 13);
-            this.lblSubTituloDatos.TabIndex = 14;
-            this.lblSubTituloDatos.Text = "DATOS PERSONALES";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCedula.Location = new System.Drawing.Point(74, 50);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.PlaceHolder = "Cedula";
-            this.txtCedula.Size = new System.Drawing.Size(100, 20);
-            this.txtCedula.TabIndex = 17;
-            this.txtCedula.Text = "Cedula";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombre.Location = new System.Drawing.Point(74, 88);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.PlaceHolder = "Nombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 18;
-            this.txtNombre.Text = "Nombre";
-            // 
-            // txtApellido
-            // 
-            this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.txtApellido.Location = new System.Drawing.Point(74, 133);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.PlaceHolder = "Apellido";
-            this.txtApellido.Size = new System.Drawing.Size(100, 20);
-            this.txtApellido.TabIndex = 19;
-            this.txtApellido.Text = "Apellido";
-            // 
-            // pnDatosCliente
-            // 
-            this.pnDatosCliente.BackColor = System.Drawing.Color.Transparent;
-            this.pnDatosCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnDatosCliente.Controls.Add(this.txtApellido);
-            this.pnDatosCliente.Controls.Add(this.txtNombre);
-            this.pnDatosCliente.Controls.Add(this.txtCedula);
-            this.pnDatosCliente.Controls.Add(this.lblSubTituloDatos);
-            this.pnDatosCliente.Controls.Add(this.lblCedula);
-            this.pnDatosCliente.Controls.Add(this.lblNombre);
-            this.pnDatosCliente.Controls.Add(this.lblApellido);
-            this.pnDatosCliente.Location = new System.Drawing.Point(72, 63);
-            this.pnDatosCliente.Name = "pnDatosCliente";
-            this.pnDatosCliente.Size = new System.Drawing.Size(235, 195);
-            this.pnDatosCliente.TabIndex = 12;
-            this.pnDatosCliente.Paint += new System.Windows.Forms.PaintEventHandler(this.pnDatosCliente_Paint);
+            this.lblCorreoAct.AutoSize = true;
+            this.lblCorreoAct.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblCorreoAct.Location = new System.Drawing.Point(13, 91);
+            this.lblCorreoAct.Name = "lblCorreoAct";
+            this.lblCorreoAct.Size = new System.Drawing.Size(100, 13);
+            this.lblCorreoAct.TabIndex = 9;
+            this.lblCorreoAct.Text = "Correo Electrónico: ";
             // 
             // panel3
             // 
@@ -366,36 +329,6 @@ namespace Proyecto_Final_Lab_BDI
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(235, 195);
             this.panel3.TabIndex = 13;
-            // 
-            // txtApellidoAct
-            // 
-            this.txtApellidoAct.ForeColor = System.Drawing.Color.DimGray;
-            this.txtApellidoAct.Location = new System.Drawing.Point(74, 133);
-            this.txtApellidoAct.Name = "txtApellidoAct";
-            this.txtApellidoAct.PlaceHolder = "Apellido";
-            this.txtApellidoAct.Size = new System.Drawing.Size(100, 20);
-            this.txtApellidoAct.TabIndex = 19;
-            this.txtApellidoAct.Text = "Apellido";
-            // 
-            // txtNombreAct
-            // 
-            this.txtNombreAct.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreAct.Location = new System.Drawing.Point(74, 88);
-            this.txtNombreAct.Name = "txtNombreAct";
-            this.txtNombreAct.PlaceHolder = "Nombre";
-            this.txtNombreAct.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreAct.TabIndex = 18;
-            this.txtNombreAct.Text = "Nombre";
-            // 
-            // txtCedulaAct
-            // 
-            this.txtCedulaAct.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCedulaAct.Location = new System.Drawing.Point(74, 50);
-            this.txtCedulaAct.Name = "txtCedulaAct";
-            this.txtCedulaAct.PlaceHolder = "Cedula";
-            this.txtCedulaAct.Size = new System.Drawing.Size(100, 20);
-            this.txtCedulaAct.TabIndex = 17;
-            this.txtCedulaAct.Text = "Cedula";
             // 
             // lblSubTituloActualizar
             // 
@@ -437,21 +370,215 @@ namespace Proyecto_Final_Lab_BDI
             this.lblApellidoAct.TabIndex = 2;
             this.lblApellidoAct.Text = "Apellido:";
             // 
-            // panel4
+            // panel1
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.txtCorreoAct);
-            this.panel4.Controls.Add(this.txtCelularAct);
-            this.panel4.Controls.Add(this.lblSubTituloActualizarInfo);
-            this.panel4.Controls.Add(this.lblCelularAct);
-            this.panel4.Controls.Add(this.lblCorreoAct);
-            this.panel4.Location = new System.Drawing.Point(469, 173);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(235, 195);
-            this.panel4.TabIndex = 15;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.lblTituloActualizar);
+            this.panel1.Controls.Add(this.btnBuscarPorCedula);
+            this.panel1.Controls.Add(this.txtCedulaCliente);
+            this.panel1.Location = new System.Drawing.Point(9, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(758, 159);
+            this.panel1.TabIndex = 0;
+            // 
+            // lblTituloActualizar
+            // 
+            this.lblTituloActualizar.AutoSize = true;
+            this.lblTituloActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloActualizar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblTituloActualizar.Location = new System.Drawing.Point(244, 34);
+            this.lblTituloActualizar.Name = "lblTituloActualizar";
+            this.lblTituloActualizar.Size = new System.Drawing.Size(267, 20);
+            this.lblTituloActualizar.TabIndex = 2;
+            this.lblTituloActualizar.Text = "ACTUALIZAR DATOS DE CLIENTE";
+            // 
+            // btnBuscarPorCedula
+            // 
+            this.btnBuscarPorCedula.BackColor = System.Drawing.Color.Honeydew;
+            this.btnBuscarPorCedula.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarPorCedula.Location = new System.Drawing.Point(336, 93);
+            this.btnBuscarPorCedula.Name = "btnBuscarPorCedula";
+            this.btnBuscarPorCedula.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarPorCedula.TabIndex = 1;
+            this.btnBuscarPorCedula.Text = "Buscar";
+            this.btnBuscarPorCedula.UseVisualStyleBackColor = false;
+            this.btnBuscarPorCedula.Click += new System.EventHandler(this.btnBuscarPorCedula_Click);
+            // 
+            // tpEliminar
+            // 
+            this.tpEliminar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.tpEliminar.Controls.Add(this.btnEliminarClienteDel);
+            this.tpEliminar.Controls.Add(this.dgvClienteDel);
+            this.tpEliminar.Controls.Add(this.panel5);
+            this.tpEliminar.Location = new System.Drawing.Point(4, 22);
+            this.tpEliminar.Name = "tpEliminar";
+            this.tpEliminar.Size = new System.Drawing.Size(768, 400);
+            this.tpEliminar.TabIndex = 2;
+            this.tpEliminar.Text = "Eliminar Registros";
+            // 
+            // tpConsultar
+            // 
+            this.tpConsultar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.tpConsultar.Controls.Add(this.dgvClientesConsulta);
+            this.tpConsultar.Controls.Add(this.panel6);
+            this.tpConsultar.Location = new System.Drawing.Point(4, 22);
+            this.tpConsultar.Name = "tpConsultar";
+            this.tpConsultar.Size = new System.Drawing.Size(768, 400);
+            this.tpConsultar.TabIndex = 3;
+            this.tpConsultar.Text = "Consultar Datos";
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.lblTituloEliminarCliente);
+            this.panel5.Controls.Add(this.btnBuscarDel);
+            this.panel5.Controls.Add(this.txtClienteDel);
+            this.panel5.Location = new System.Drawing.Point(0, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(768, 159);
+            this.panel5.TabIndex = 1;
+            // 
+            // lblTituloEliminarCliente
+            // 
+            this.lblTituloEliminarCliente.AutoSize = true;
+            this.lblTituloEliminarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloEliminarCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblTituloEliminarCliente.Location = new System.Drawing.Point(215, 32);
+            this.lblTituloEliminarCliente.Name = "lblTituloEliminarCliente";
+            this.lblTituloEliminarCliente.Size = new System.Drawing.Size(318, 20);
+            this.lblTituloEliminarCliente.TabIndex = 2;
+            this.lblTituloEliminarCliente.Text = "ELIMINAR CLIENTE DE BASE DE DATOS";
+            // 
+            // btnBuscarDel
+            // 
+            this.btnBuscarDel.BackColor = System.Drawing.Color.Honeydew;
+            this.btnBuscarDel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarDel.Location = new System.Drawing.Point(334, 104);
+            this.btnBuscarDel.Name = "btnBuscarDel";
+            this.btnBuscarDel.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarDel.TabIndex = 1;
+            this.btnBuscarDel.Text = "Buscar";
+            this.btnBuscarDel.UseVisualStyleBackColor = false;
+            // 
+            // dgvClienteDel
+            // 
+            this.dgvClienteDel.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvClienteDel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClienteDel.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvClienteDel.Location = new System.Drawing.Point(134, 169);
+            this.dgvClienteDel.Name = "dgvClienteDel";
+            this.dgvClienteDel.Size = new System.Drawing.Size(478, 184);
+            this.dgvClienteDel.TabIndex = 2;
+            // 
+            // btnEliminarClienteDel
+            // 
+            this.btnEliminarClienteDel.BackColor = System.Drawing.Color.Honeydew;
+            this.btnEliminarClienteDel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarClienteDel.Enabled = false;
+            this.btnEliminarClienteDel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnEliminarClienteDel.Location = new System.Drawing.Point(280, 359);
+            this.btnEliminarClienteDel.Name = "btnEliminarClienteDel";
+            this.btnEliminarClienteDel.Size = new System.Drawing.Size(187, 23);
+            this.btnEliminarClienteDel.TabIndex = 3;
+            this.btnEliminarClienteDel.Text = "Borrar cliente";
+            this.btnEliminarClienteDel.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.lblTituloConsultarClientes);
+            this.panel6.Controls.Add(this.btnBuscarClientesCon);
+            this.panel6.Controls.Add(this.txtBuscarClientesCon);
+            this.panel6.Location = new System.Drawing.Point(4, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(768, 159);
+            this.panel6.TabIndex = 2;
+            // 
+            // lblTituloConsultarClientes
+            // 
+            this.lblTituloConsultarClientes.AutoSize = true;
+            this.lblTituloConsultarClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloConsultarClientes.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblTituloConsultarClientes.Location = new System.Drawing.Point(197, 33);
+            this.lblTituloConsultarClientes.Name = "lblTituloConsultarClientes";
+            this.lblTituloConsultarClientes.Size = new System.Drawing.Size(333, 20);
+            this.lblTituloConsultarClientes.TabIndex = 2;
+            this.lblTituloConsultarClientes.Text = "CONSULTAR INFORMACIÓN DE CLIENTES";
+            // 
+            // btnBuscarClientesCon
+            // 
+            this.btnBuscarClientesCon.BackColor = System.Drawing.Color.Honeydew;
+            this.btnBuscarClientesCon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarClientesCon.Location = new System.Drawing.Point(334, 104);
+            this.btnBuscarClientesCon.Name = "btnBuscarClientesCon";
+            this.btnBuscarClientesCon.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarClientesCon.TabIndex = 1;
+            this.btnBuscarClientesCon.Text = "Buscar";
+            this.btnBuscarClientesCon.UseVisualStyleBackColor = false;
+            // 
+            // dgvClientesConsulta
+            // 
+            this.dgvClientesConsulta.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvClientesConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientesConsulta.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvClientesConsulta.Location = new System.Drawing.Point(139, 168);
+            this.dgvClientesConsulta.Name = "dgvClientesConsulta";
+            this.dgvClientesConsulta.Size = new System.Drawing.Size(478, 184);
+            this.dgvClientesConsulta.TabIndex = 4;
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
+            this.txtApellido.Location = new System.Drawing.Point(74, 133);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.PlaceHolder = "Apellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 19;
+            this.txtApellido.Text = "Apellido";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombre.Location = new System.Drawing.Point(74, 88);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.PlaceHolder = "Nombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 18;
+            this.txtNombre.Text = "Nombre";
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCedula.Location = new System.Drawing.Point(74, 50);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.PlaceHolder = "Cedula";
+            this.txtCedula.Size = new System.Drawing.Size(100, 20);
+            this.txtCedula.TabIndex = 17;
+            this.txtCedula.Text = "Cedula";
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCorreo.Location = new System.Drawing.Point(119, 88);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.PlaceHolder = "correo@gmail.com";
+            this.txtCorreo.Size = new System.Drawing.Size(100, 20);
+            this.txtCorreo.TabIndex = 16;
+            this.txtCorreo.Text = "correo@gmail.com";
+            // 
+            // txtCelular
+            // 
+            this.txtCelular.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCelular.Location = new System.Drawing.Point(119, 50);
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.PlaceHolder = "Celular";
+            this.txtCelular.Size = new System.Drawing.Size(100, 20);
+            this.txtCelular.TabIndex = 15;
+            this.txtCelular.Text = "Celular";
             // 
             // txtCorreoAct
             // 
+            this.txtCorreoAct.Enabled = false;
             this.txtCorreoAct.ForeColor = System.Drawing.Color.DimGray;
             this.txtCorreoAct.Location = new System.Drawing.Point(119, 88);
             this.txtCorreoAct.Name = "txtCorreoAct";
@@ -462,6 +589,7 @@ namespace Proyecto_Final_Lab_BDI
             // 
             // txtCelularAct
             // 
+            this.txtCelularAct.Enabled = false;
             this.txtCelularAct.ForeColor = System.Drawing.Color.DimGray;
             this.txtCelularAct.Location = new System.Drawing.Point(119, 50);
             this.txtCelularAct.Name = "txtCelularAct";
@@ -470,44 +598,68 @@ namespace Proyecto_Final_Lab_BDI
             this.txtCelularAct.TabIndex = 15;
             this.txtCelularAct.Text = "Celular";
             // 
-            // lblSubTituloActualizarInfo
+            // txtApellidoAct
             // 
-            this.lblSubTituloActualizarInfo.AutoSize = true;
-            this.lblSubTituloActualizarInfo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblSubTituloActualizarInfo.Location = new System.Drawing.Point(59, 17);
-            this.lblSubTituloActualizarInfo.Name = "lblSubTituloActualizarInfo";
-            this.lblSubTituloActualizarInfo.Size = new System.Drawing.Size(112, 13);
-            this.lblSubTituloActualizarInfo.TabIndex = 15;
-            this.lblSubTituloActualizarInfo.Text = "INFO DE CONTACTO";
+            this.txtApellidoAct.Enabled = false;
+            this.txtApellidoAct.ForeColor = System.Drawing.Color.DimGray;
+            this.txtApellidoAct.Location = new System.Drawing.Point(74, 133);
+            this.txtApellidoAct.Name = "txtApellidoAct";
+            this.txtApellidoAct.PlaceHolder = "Apellido";
+            this.txtApellidoAct.Size = new System.Drawing.Size(100, 20);
+            this.txtApellidoAct.TabIndex = 19;
+            this.txtApellidoAct.Text = "Apellido";
             // 
-            // lblCelularAct
+            // txtNombreAct
             // 
-            this.lblCelularAct.AutoSize = true;
-            this.lblCelularAct.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblCelularAct.Location = new System.Drawing.Point(13, 53);
-            this.lblCelularAct.Name = "lblCelularAct";
-            this.lblCelularAct.Size = new System.Drawing.Size(45, 13);
-            this.lblCelularAct.TabIndex = 3;
-            this.lblCelularAct.Text = "Celular: ";
+            this.txtNombreAct.Enabled = false;
+            this.txtNombreAct.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreAct.Location = new System.Drawing.Point(74, 88);
+            this.txtNombreAct.Name = "txtNombreAct";
+            this.txtNombreAct.PlaceHolder = "Nombre";
+            this.txtNombreAct.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreAct.TabIndex = 18;
+            this.txtNombreAct.Text = "Nombre";
             // 
-            // lblCorreoAct
+            // txtCedulaAct
             // 
-            this.lblCorreoAct.AutoSize = true;
-            this.lblCorreoAct.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblCorreoAct.Location = new System.Drawing.Point(13, 91);
-            this.lblCorreoAct.Name = "lblCorreoAct";
-            this.lblCorreoAct.Size = new System.Drawing.Size(100, 13);
-            this.lblCorreoAct.TabIndex = 9;
-            this.lblCorreoAct.Text = "Correo Electrónico: ";
+            this.txtCedulaAct.Enabled = false;
+            this.txtCedulaAct.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCedulaAct.Location = new System.Drawing.Point(74, 50);
+            this.txtCedulaAct.Name = "txtCedulaAct";
+            this.txtCedulaAct.PlaceHolder = "Cedula";
+            this.txtCedulaAct.Size = new System.Drawing.Size(100, 20);
+            this.txtCedulaAct.TabIndex = 17;
+            this.txtCedulaAct.Text = "Cedula";
             // 
-            // btnActualizar
+            // txtCedulaCliente
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(347, 345);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 16;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.txtCedulaCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCedulaCliente.Location = new System.Drawing.Point(278, 67);
+            this.txtCedulaCliente.Name = "txtCedulaCliente";
+            this.txtCedulaCliente.PlaceHolder = "Buscar...";
+            this.txtCedulaCliente.Size = new System.Drawing.Size(187, 20);
+            this.txtCedulaCliente.TabIndex = 0;
+            this.txtCedulaCliente.Text = "Buscar...";
+            // 
+            // txtClienteDel
+            // 
+            this.txtClienteDel.ForeColor = System.Drawing.Color.DimGray;
+            this.txtClienteDel.Location = new System.Drawing.Point(278, 67);
+            this.txtClienteDel.Name = "txtClienteDel";
+            this.txtClienteDel.PlaceHolder = "Buscar...";
+            this.txtClienteDel.Size = new System.Drawing.Size(187, 20);
+            this.txtClienteDel.TabIndex = 0;
+            this.txtClienteDel.Text = "Buscar...";
+            // 
+            // txtBuscarClientesCon
+            // 
+            this.txtBuscarClientesCon.ForeColor = System.Drawing.Color.DimGray;
+            this.txtBuscarClientesCon.Location = new System.Drawing.Point(278, 67);
+            this.txtBuscarClientesCon.Name = "txtBuscarClientesCon";
+            this.txtBuscarClientesCon.PlaceHolder = "Buscar...";
+            this.txtBuscarClientesCon.Size = new System.Drawing.Size(187, 20);
+            this.txtBuscarClientesCon.TabIndex = 0;
+            this.txtBuscarClientesCon.Text = "Buscar...";
             // 
             // Form1
             // 
@@ -515,22 +667,32 @@ namespace Proyecto_Final_Lab_BDI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tbcCRUD);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "AppCliente";
             this.tbcCRUD.ResumeLayout(false);
             this.tpCrear.ResumeLayout(false);
             this.tpCrear.PerformLayout();
-            this.tpActualizar.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.pnDatosCliente.ResumeLayout(false);
             this.pnDatosCliente.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.tpActualizar.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.tpEliminar.ResumeLayout(false);
+            this.tpConsultar.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClienteDel)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientesConsulta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -577,6 +739,17 @@ namespace Proyecto_Final_Lab_BDI
         private System.Windows.Forms.Label lblCedulaAct;
         private System.Windows.Forms.Label lblNombreAct;
         private System.Windows.Forms.Label lblApellidoAct;
+        private System.Windows.Forms.Button btnEliminarClienteDel;
+        private System.Windows.Forms.DataGridView dgvClienteDel;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblTituloEliminarCliente;
+        private System.Windows.Forms.Button btnBuscarDel;
+        private TxtHolder txtClienteDel;
+        private System.Windows.Forms.DataGridView dgvClientesConsulta;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lblTituloConsultarClientes;
+        private System.Windows.Forms.Button btnBuscarClientesCon;
+        private TxtHolder txtBuscarClientesCon;
     }
 }
 
