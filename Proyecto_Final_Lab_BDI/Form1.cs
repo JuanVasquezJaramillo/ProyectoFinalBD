@@ -27,6 +27,20 @@ namespace Proyecto_Final_Lab_BDI
             Regex rx = new Regex(patron, RegexOptions.IgnoreCase); //constructor recibe la regex y una opción preestablecida, que en este caso indica que será caseSensitive.
             return rx.IsMatch(correo); //rx.IsMatch compara la regex del constructor con la que pasamos por este parametro
         }
-        
+
+        private void lblCedula_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnDatosCliente_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
