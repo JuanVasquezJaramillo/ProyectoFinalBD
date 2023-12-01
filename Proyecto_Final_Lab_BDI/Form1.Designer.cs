@@ -58,16 +58,16 @@ namespace Proyecto_Final_Lab_BDI
             this.lblTituloActualizar = new System.Windows.Forms.Label();
             this.btnBuscarPorCedula = new System.Windows.Forms.Button();
             this.tpEliminar = new System.Windows.Forms.TabPage();
-            this.tpConsultar = new System.Windows.Forms.TabPage();
+            this.btnEliminarClienteDel = new System.Windows.Forms.Button();
+            this.dgvClienteDel = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblTituloEliminarCliente = new System.Windows.Forms.Label();
             this.btnBuscarDel = new System.Windows.Forms.Button();
-            this.dgvClienteDel = new System.Windows.Forms.DataGridView();
-            this.btnEliminarClienteDel = new System.Windows.Forms.Button();
+            this.tpConsultar = new System.Windows.Forms.TabPage();
+            this.dgvClientesConsulta = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblTituloConsultarClientes = new System.Windows.Forms.Label();
             this.btnBuscarClientesCon = new System.Windows.Forms.Button();
-            this.dgvClientesConsulta = new System.Windows.Forms.DataGridView();
             this.txtApellido = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.txtNombre = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.txtCedula = new Proyecto_Final_Lab_BDI.TxtHolder();
@@ -90,11 +90,11 @@ namespace Proyecto_Final_Lab_BDI
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tpEliminar.SuspendLayout();
-            this.tpConsultar.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClienteDel)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.tpConsultar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientesConsulta)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbcCRUD
@@ -270,6 +270,7 @@ namespace Proyecto_Final_Lab_BDI
             this.btnActualizar.TabIndex = 16;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // panel4
             // 
@@ -416,16 +417,28 @@ namespace Proyecto_Final_Lab_BDI
             this.tpEliminar.TabIndex = 2;
             this.tpEliminar.Text = "Eliminar Registros";
             // 
-            // tpConsultar
+            // btnEliminarClienteDel
             // 
-            this.tpConsultar.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.tpConsultar.Controls.Add(this.dgvClientesConsulta);
-            this.tpConsultar.Controls.Add(this.panel6);
-            this.tpConsultar.Location = new System.Drawing.Point(4, 22);
-            this.tpConsultar.Name = "tpConsultar";
-            this.tpConsultar.Size = new System.Drawing.Size(768, 400);
-            this.tpConsultar.TabIndex = 3;
-            this.tpConsultar.Text = "Consultar Datos";
+            this.btnEliminarClienteDel.BackColor = System.Drawing.Color.Honeydew;
+            this.btnEliminarClienteDel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarClienteDel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnEliminarClienteDel.Location = new System.Drawing.Point(280, 359);
+            this.btnEliminarClienteDel.Name = "btnEliminarClienteDel";
+            this.btnEliminarClienteDel.Size = new System.Drawing.Size(187, 23);
+            this.btnEliminarClienteDel.TabIndex = 3;
+            this.btnEliminarClienteDel.Text = "Borrar cliente";
+            this.btnEliminarClienteDel.UseVisualStyleBackColor = false;
+            this.btnEliminarClienteDel.Click += new System.EventHandler(this.btnEliminarClienteDel_Click);
+            // 
+            // dgvClienteDel
+            // 
+            this.dgvClienteDel.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvClienteDel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClienteDel.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvClienteDel.Location = new System.Drawing.Point(134, 169);
+            this.dgvClienteDel.Name = "dgvClienteDel";
+            this.dgvClienteDel.Size = new System.Drawing.Size(478, 184);
+            this.dgvClienteDel.TabIndex = 2;
             // 
             // panel5
             // 
@@ -459,29 +472,28 @@ namespace Proyecto_Final_Lab_BDI
             this.btnBuscarDel.TabIndex = 1;
             this.btnBuscarDel.Text = "Buscar";
             this.btnBuscarDel.UseVisualStyleBackColor = false;
+            this.btnBuscarDel.Click += new System.EventHandler(this.btnBuscarDel_Click);
             // 
-            // dgvClienteDel
+            // tpConsultar
             // 
-            this.dgvClienteDel.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvClienteDel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClienteDel.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgvClienteDel.Location = new System.Drawing.Point(134, 169);
-            this.dgvClienteDel.Name = "dgvClienteDel";
-            this.dgvClienteDel.Size = new System.Drawing.Size(478, 184);
-            this.dgvClienteDel.TabIndex = 2;
+            this.tpConsultar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.tpConsultar.Controls.Add(this.dgvClientesConsulta);
+            this.tpConsultar.Controls.Add(this.panel6);
+            this.tpConsultar.Location = new System.Drawing.Point(4, 22);
+            this.tpConsultar.Name = "tpConsultar";
+            this.tpConsultar.Size = new System.Drawing.Size(768, 400);
+            this.tpConsultar.TabIndex = 3;
+            this.tpConsultar.Text = "Consultar Datos";
             // 
-            // btnEliminarClienteDel
+            // dgvClientesConsulta
             // 
-            this.btnEliminarClienteDel.BackColor = System.Drawing.Color.Honeydew;
-            this.btnEliminarClienteDel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarClienteDel.Enabled = false;
-            this.btnEliminarClienteDel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnEliminarClienteDel.Location = new System.Drawing.Point(280, 359);
-            this.btnEliminarClienteDel.Name = "btnEliminarClienteDel";
-            this.btnEliminarClienteDel.Size = new System.Drawing.Size(187, 23);
-            this.btnEliminarClienteDel.TabIndex = 3;
-            this.btnEliminarClienteDel.Text = "Borrar cliente";
-            this.btnEliminarClienteDel.UseVisualStyleBackColor = false;
+            this.dgvClientesConsulta.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvClientesConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientesConsulta.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvClientesConsulta.Location = new System.Drawing.Point(139, 168);
+            this.dgvClientesConsulta.Name = "dgvClientesConsulta";
+            this.dgvClientesConsulta.Size = new System.Drawing.Size(478, 184);
+            this.dgvClientesConsulta.TabIndex = 4;
             // 
             // panel6
             // 
@@ -515,16 +527,6 @@ namespace Proyecto_Final_Lab_BDI
             this.btnBuscarClientesCon.TabIndex = 1;
             this.btnBuscarClientesCon.Text = "Buscar";
             this.btnBuscarClientesCon.UseVisualStyleBackColor = false;
-            // 
-            // dgvClientesConsulta
-            // 
-            this.dgvClientesConsulta.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvClientesConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientesConsulta.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgvClientesConsulta.Location = new System.Drawing.Point(139, 168);
-            this.dgvClientesConsulta.Name = "dgvClientesConsulta";
-            this.dgvClientesConsulta.Size = new System.Drawing.Size(478, 184);
-            this.dgvClientesConsulta.TabIndex = 4;
             // 
             // txtApellido
             // 
@@ -686,13 +688,13 @@ namespace Proyecto_Final_Lab_BDI
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tpEliminar.ResumeLayout(false);
-            this.tpConsultar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClienteDel)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClienteDel)).EndInit();
+            this.tpConsultar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientesConsulta)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientesConsulta)).EndInit();
             this.ResumeLayout(false);
 
         }
