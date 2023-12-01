@@ -14,7 +14,7 @@ namespace Proyecto_Final_Lab_BDI.logica
         public DataSet consultarCliente(int perCedula)
         {
             DataSet localDataSet = new DataSet();
-            string consulta = "SELECT perCedula as Cedula, perNombre as Nombre, perApellido as Apellido, perNumTelefono as Celular, perCorreo as Correo FROM Cliente WHERE perCedula =" + perCedula;
+            string consulta = $"SELECT perCedula as Cedula, perNombre as Nombre, perApellido as Apellido, perNumTelefono as Celular, perCorreo as Correo FROM Cliente WHERE perCedula ={perCedula}";
             localDataSet = objDatos.ejecutarSelect(consulta);
             return localDataSet;
         }

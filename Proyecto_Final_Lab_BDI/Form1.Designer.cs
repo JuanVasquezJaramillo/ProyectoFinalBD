@@ -68,6 +68,19 @@ namespace Proyecto_Final_Lab_BDI
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblTituloConsultarClientes = new System.Windows.Forms.Label();
             this.btnBuscarClientesCon = new System.Windows.Forms.Button();
+            this.tpReportes = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSubtituloReportes2 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.dgvReporte3 = new System.Windows.Forms.DataGridView();
+            this.btnVerReporte = new System.Windows.Forms.Button();
+            this.dgvReporte2 = new System.Windows.Forms.DataGridView();
+            this.dgvReporte1 = new System.Windows.Forms.DataGridView();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblTituloReportes = new System.Windows.Forms.Label();
+            this.lblSubTituloReportes = new System.Windows.Forms.Label();
+            this.btnVerReporte2 = new System.Windows.Forms.Button();
+            this.btnVerReporte3 = new System.Windows.Forms.Button();
             this.txtApellido = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.txtNombre = new Proyecto_Final_Lab_BDI.TxtHolder();
             this.txtCedula = new Proyecto_Final_Lab_BDI.TxtHolder();
@@ -95,6 +108,12 @@ namespace Proyecto_Final_Lab_BDI
             this.tpConsultar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientesConsulta)).BeginInit();
             this.panel6.SuspendLayout();
+            this.tpReportes.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte1)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbcCRUD
@@ -103,6 +122,7 @@ namespace Proyecto_Final_Lab_BDI
             this.tbcCRUD.Controls.Add(this.tpActualizar);
             this.tbcCRUD.Controls.Add(this.tpEliminar);
             this.tbcCRUD.Controls.Add(this.tpConsultar);
+            this.tbcCRUD.Controls.Add(this.tpReportes);
             this.tbcCRUD.Location = new System.Drawing.Point(12, 12);
             this.tbcCRUD.Name = "tbcCRUD";
             this.tbcCRUD.SelectedIndex = 0;
@@ -529,6 +549,152 @@ namespace Proyecto_Final_Lab_BDI
             this.btnBuscarClientesCon.UseVisualStyleBackColor = false;
             this.btnBuscarClientesCon.Click += new System.EventHandler(this.btnBuscarClientesCon_Click);
             // 
+            // tpReportes
+            // 
+            this.tpReportes.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.tpReportes.Controls.Add(this.label1);
+            this.tpReportes.Controls.Add(this.lblSubtituloReportes2);
+            this.tpReportes.Controls.Add(this.panel8);
+            this.tpReportes.Controls.Add(this.panel7);
+            this.tpReportes.Controls.Add(this.lblSubTituloReportes);
+            this.tpReportes.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.tpReportes.Location = new System.Drawing.Point(4, 22);
+            this.tpReportes.Name = "tpReportes";
+            this.tpReportes.Size = new System.Drawing.Size(768, 400);
+            this.tpReportes.TabIndex = 4;
+            this.tpReportes.Text = "Reportes";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label1.Location = new System.Drawing.Point(557, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 39);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Nombre de los destinos \r\nde los paquetes \r\ncon costo menor de 350000$";
+            // 
+            // lblSubtituloReportes2
+            // 
+            this.lblSubtituloReportes2.AutoSize = true;
+            this.lblSubtituloReportes2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblSubtituloReportes2.Location = new System.Drawing.Point(298, 67);
+            this.lblSubtituloReportes2.Name = "lblSubtituloReportes2";
+            this.lblSubtituloReportes2.Size = new System.Drawing.Size(145, 39);
+            this.lblSubtituloReportes2.TabIndex = 16;
+            this.lblSubtituloReportes2.Text = "Nombre del cliente \r\ny cantidad de reservas \r\nhechas por él en el año 2023";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel8.Controls.Add(this.btnVerReporte3);
+            this.panel8.Controls.Add(this.btnVerReporte2);
+            this.panel8.Controls.Add(this.dgvReporte3);
+            this.panel8.Controls.Add(this.btnVerReporte);
+            this.panel8.Controls.Add(this.dgvReporte2);
+            this.panel8.Controls.Add(this.dgvReporte1);
+            this.panel8.Location = new System.Drawing.Point(19, 118);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(742, 218);
+            this.panel8.TabIndex = 14;
+            // 
+            // dgvReporte3
+            // 
+            this.dgvReporte3.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvReporte3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporte3.Location = new System.Drawing.Point(494, 26);
+            this.dgvReporte3.Name = "dgvReporte3";
+            this.dgvReporte3.Size = new System.Drawing.Size(223, 150);
+            this.dgvReporte3.TabIndex = 2;
+            // 
+            // btnVerReporte
+            // 
+            this.btnVerReporte.BackColor = System.Drawing.Color.Honeydew;
+            this.btnVerReporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerReporte.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.btnVerReporte.Location = new System.Drawing.Point(68, 182);
+            this.btnVerReporte.Name = "btnVerReporte";
+            this.btnVerReporte.Size = new System.Drawing.Size(75, 23);
+            this.btnVerReporte.TabIndex = 17;
+            this.btnVerReporte.Text = "VER";
+            this.btnVerReporte.UseVisualStyleBackColor = false;
+            this.btnVerReporte.Click += new System.EventHandler(this.btnVerReporte_Click);
+            // 
+            // dgvReporte2
+            // 
+            this.dgvReporte2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvReporte2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporte2.Location = new System.Drawing.Point(252, 26);
+            this.dgvReporte2.Name = "dgvReporte2";
+            this.dgvReporte2.Size = new System.Drawing.Size(211, 150);
+            this.dgvReporte2.TabIndex = 1;
+            // 
+            // dgvReporte1
+            // 
+            this.dgvReporte1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvReporte1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporte1.Location = new System.Drawing.Point(13, 26);
+            this.dgvReporte1.Name = "dgvReporte1";
+            this.dgvReporte1.Size = new System.Drawing.Size(209, 150);
+            this.dgvReporte1.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel7.Controls.Add(this.lblTituloReportes);
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(758, 49);
+            this.panel7.TabIndex = 1;
+            // 
+            // lblTituloReportes
+            // 
+            this.lblTituloReportes.AutoSize = true;
+            this.lblTituloReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloReportes.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblTituloReportes.Location = new System.Drawing.Point(303, 18);
+            this.lblTituloReportes.Name = "lblTituloReportes";
+            this.lblTituloReportes.Size = new System.Drawing.Size(163, 20);
+            this.lblTituloReportes.TabIndex = 2;
+            this.lblTituloReportes.Text = "REPORTES VARIOS";
+            // 
+            // lblSubTituloReportes
+            // 
+            this.lblSubTituloReportes.AutoSize = true;
+            this.lblSubTituloReportes.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblSubTituloReportes.Location = new System.Drawing.Point(73, 67);
+            this.lblSubTituloReportes.Name = "lblSubTituloReportes";
+            this.lblSubTituloReportes.Size = new System.Drawing.Size(58, 39);
+            this.lblSubTituloReportes.TabIndex = 14;
+            this.lblSubTituloReportes.Text = "Cantidad \r\nde clientes\r\nregistrados\r\n";
+            // 
+            // btnVerReporte2
+            // 
+            this.btnVerReporte2.BackColor = System.Drawing.Color.Honeydew;
+            this.btnVerReporte2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerReporte2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.btnVerReporte2.Location = new System.Drawing.Point(322, 182);
+            this.btnVerReporte2.Name = "btnVerReporte2";
+            this.btnVerReporte2.Size = new System.Drawing.Size(75, 23);
+            this.btnVerReporte2.TabIndex = 18;
+            this.btnVerReporte2.Text = "VER";
+            this.btnVerReporte2.UseVisualStyleBackColor = false;
+            this.btnVerReporte2.Click += new System.EventHandler(this.btnVerReporte2_Click);
+            // 
+            // btnVerReporte3
+            // 
+            this.btnVerReporte3.BackColor = System.Drawing.Color.Honeydew;
+            this.btnVerReporte3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerReporte3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.btnVerReporte3.Location = new System.Drawing.Point(571, 182);
+            this.btnVerReporte3.Name = "btnVerReporte3";
+            this.btnVerReporte3.Size = new System.Drawing.Size(75, 23);
+            this.btnVerReporte3.TabIndex = 19;
+            this.btnVerReporte3.Text = "VER";
+            this.btnVerReporte3.UseVisualStyleBackColor = false;
+            this.btnVerReporte3.Click += new System.EventHandler(this.btnVerReporte3_Click);
+            // 
             // txtApellido
             // 
             this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
@@ -663,7 +829,6 @@ namespace Proyecto_Final_Lab_BDI
             this.txtBuscarClientesCon.Size = new System.Drawing.Size(187, 20);
             this.txtBuscarClientesCon.TabIndex = 0;
             this.txtBuscarClientesCon.Text = "Buscar...";
-            //this.txtBuscarClientesCon.TextChanged += new System.EventHandler(this.txtBuscarClientesCon_TextChanged);
             // 
             // Form1
             // 
@@ -697,6 +862,14 @@ namespace Proyecto_Final_Lab_BDI
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientesConsulta)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.tpReportes.ResumeLayout(false);
+            this.tpReportes.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -754,6 +927,19 @@ namespace Proyecto_Final_Lab_BDI
         private System.Windows.Forms.Label lblTituloConsultarClientes;
         private System.Windows.Forms.Button btnBuscarClientesCon;
         private TxtHolder txtBuscarClientesCon;
+        private System.Windows.Forms.TabPage tpReportes;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label lblTituloReportes;
+        private System.Windows.Forms.Button btnVerReporte;
+        private System.Windows.Forms.Label lblSubtituloReportes2;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.DataGridView dgvReporte1;
+        private System.Windows.Forms.Label lblSubTituloReportes;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvReporte3;
+        private System.Windows.Forms.DataGridView dgvReporte2;
+        private System.Windows.Forms.Button btnVerReporte3;
+        private System.Windows.Forms.Button btnVerReporte2;
     }
 }
 
