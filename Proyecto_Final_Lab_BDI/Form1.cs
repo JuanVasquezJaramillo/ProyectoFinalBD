@@ -142,6 +142,25 @@ namespace Proyecto_Final_Lab_BDI
                 MessageBox.Show("No se pudo encontrar el cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnBuscarClientesCon_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            int cedula;
+            cedula = int.Parse(txtBuscarClientesCon.Text);
+            ds = cliente.consultarCliente(cedula);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+
+                dgvClientesConsulta.DataSource = ds;
+                dgvClientesConsulta.DataMember = "ResultadoDatos";
+                MessageBox.Show("Cliente encontrado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo encontrar el cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         //------------BTNBuscar DE LA PESTAÑA ELIMINAR----------------
     }
 }
