@@ -527,6 +527,7 @@ namespace Proyecto_Final_Lab_BDI
             this.btnBuscarClientesCon.TabIndex = 1;
             this.btnBuscarClientesCon.Text = "Buscar";
             this.btnBuscarClientesCon.UseVisualStyleBackColor = false;
+            this.btnBuscarClientesCon.Click += new System.EventHandler(this.btnBuscarClientesCon_Click);
             // 
             // txtApellido
             // 
@@ -662,6 +663,7 @@ namespace Proyecto_Final_Lab_BDI
             this.txtBuscarClientesCon.Size = new System.Drawing.Size(187, 20);
             this.txtBuscarClientesCon.TabIndex = 0;
             this.txtBuscarClientesCon.Text = "Buscar...";
+            //this.txtBuscarClientesCon.TextChanged += new System.EventHandler(this.txtBuscarClientesCon_TextChanged);
             // 
             // Form1
             // 
