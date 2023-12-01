@@ -36,13 +36,9 @@ namespace Proyecto_Final_Lab_BDI.accesoDatos
         }
         public DataSet ejecutarSelect(string consulta)
         {
-            //Un dataSet guarda por dentro un "dataTable" e incluso puede almacenar diferentes consultas.
-            //Paso 1. Se crea un objeto vacío de tipo DataSet
             DataSet objDataSet = new DataSet();
-            //Paso 2. Creamos un adaptador que recibe por parametros la consulta y la cadena de conexión.
             OracleDataAdapter miAdaptador = new OracleDataAdapter(consulta, cadenaConexion);
-            //Paso 3. Llenamos el DataSet usando el método Fill.
-            miAdaptador.Fill(objDataSet, "ResultadoDatos"); //"ResultadoDatos" es el alias que le asignamos a nuestro dataTable resultante de la consulta.
+            miAdaptador.Fill(objDataSet, "ResultadoDatos");
             return objDataSet;
         }
     }
